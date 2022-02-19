@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 ul,
 li {
   list-style: none;
@@ -12,6 +17,9 @@ li {
 
 a {
   text-decoration: none;
+}
+img {
+  max-width: 100%;
 }
 
 .container {
@@ -42,7 +50,8 @@ a {
 .header-menu a {
   color: #ffffff;
   font-size: 1.2rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
   padding: 0.5rem 0;
   border: none;
   animation: aminacaoBorda;
@@ -86,5 +95,106 @@ a {
   }
   .header-menu a {
     font-size: 1rem;
+  }
+}
+
+/* inreoducao */
+.introducao-bg {
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: inset 0 -120px #ffffff;
+}
+
+.introducao-container {
+  max-width: 1200px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 2.5rem;
+}
+
+.introducao {
+  align-self: end;
+  padding-bottom: 200px;
+}
+
+.introducao-imagem img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.introducao h1 {
+  margin-bottom: 32px;
+  font-size: 64px;
+  font-family: 'Poppins';
+  font-weight: 600;
+  line-height: 1.125;
+}
+
+.introducao h1 span {
+  color: #ffbb00;
+  border-radius: 50%;
+}
+
+.introducao p {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 1.125rem;
+  color: #a6a6a6;
+  margin-bottom: 2rem;
+}
+
+.introducao button {
+  border: none;
+}
+.introducao a {
+  padding: 1rem 2rem;
+  background: linear-gradient(#ffbb00 0%, #f2a50c 100%);
+  border-radius: 0.3rem;
+  font-size: 1.125rem;
+  line-height: 1.33;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+
+.introducao button:hover {
+  background: linear-gradient(#ffb60d, #e59317);
+}
+.introducao button > a {
+  color: #000000;
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  .introducao h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 800px) {
+  .introducao-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    box-sizing: insert -60px #ffffff;
+  }
+  .introducao {
+    padding-bottom: 0px;
+  }
+  .introducao h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .introducao-imagem img {
+    height: 300px;
+    width: 100%;
+  }
+  .introducao a {
+    line-height: 1;
+    font-size: 1rem;
+    padding: 1rem;
   }
 }
